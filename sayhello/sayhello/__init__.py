@@ -14,7 +14,7 @@ from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask('sayhello')
-app.confi.from_pyfile('settings.py')  # 加载配置文件
+app.config.from_pyfile('settings.py')  # 加载配置文件
 app.jinja_env.trim_blocks = True  # 删除 Jinja 模板中标签之后的空行
 app.jinja_env.lstrip_blocks = True  # 删除 Jinja 模板中标签之前的空行/制表符
 
