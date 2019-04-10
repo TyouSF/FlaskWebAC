@@ -6,6 +6,8 @@ name = "pypi"
 [dev-packages]
 watchdog = "*"
 faker = "*"
+coverage = "*"
+flake8 = "*"
 
 [packages]
 bootstrap-flask = "*"
@@ -15,3 +17,9 @@ python-dotenv = "*"
 flask-wtf = "*"
 flask = "*"
 pyyaml = "*"
+flask-ckeditor = "*"
+flask-mail = "*"
+flask-login = "*"
+flask-debugtoolbar = "*"
+flask-migrate = "*"
+gunicorn = "*"

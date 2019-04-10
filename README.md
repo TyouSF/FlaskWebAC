@@ -8,7 +8,7 @@ Actual combat for FlaskWeb
 
 ### 使用到的库
 
--   flask-moment：时间处理库
+-   flask-moment：时间本地化处理库
 -   bootstrap-flask：bootstrap 支持扩展库
 -   flask-sqlalchemy：ORM 映射扩展库
 -   click：更好用的命令行创建库
@@ -23,3 +23,14 @@ Actual combat for FlaskWeb
 实现的内容：  
 一个简单的留言板，输入用户的姓名和内容，提交之后即可留言
 更为详细的可以点击上述留言板链接进入详细查看
+
+# 实战示例-02
+
+> [个人博客](bluelog/README.md)
+
+实现的内容：  
+个人博客内容关系系统，简要包含：
+
+-   博客前台
+-   博客后台
+-   评论相关
