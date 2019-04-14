@@ -16,7 +16,7 @@ Actual combat for FlaskWeb
 -   sys：系统环境相关库（sys模块负责程序与python解释器的交互，提供了一系列的函数和变量，用于操控python的运行时环境）
 -   faker：Python 中伪造数据生成器
 -   flask-login：登录认证的第三方扩展
--   Unidecode：编码转换
+-   Unidecode：编码转换（可以用于生成中文对应的拼音标题字符等）
 -   flask-debugtoolbar：flask 调试程序扩展插件
 
 # 实战示例-01
