@@ -62,7 +62,7 @@ def new_post():
         # post = Post(title=title, body=body, category_id=category_id)
         db.session.add(post)
         db.session.commit()
-        flash('Post created. / 文章已经成功创建', 'success / 成功')
+        flash('Post created. / 文章已经成功创建', 'success')
         return redirect(url_for('blog.show_post', post_id=post.id))
     return render_template('admin/new_post.html', form=form)
 
@@ -78,7 +78,7 @@ def edit_post(post_id):
         post.body = form.body.data
         post.category = Category.query.get(form.category.data)
         db.session.commit()
-        flash('Post updated. / 文章已更新', 'success / 成功')
+        flash('Post updated. / 文章已更新', 'success')
         return redirect(url_for('blog.show_post', post_id=post.id))
     form.title.data = post.title
     form.body.data = post.body
@@ -104,10 +104,10 @@ def set_comment(post_id):
     post = Post.query.get_or_404(post_id)
     if post.can_comment:
         post.can_comment = False
-        flash('Comment disabled. / 已关闭评论', 'success / 成功')
+        flash('Comment disabled. / 已关闭评论', 'success')
     else:
         post.can_comment = True
-        flash('Comment enabled. / 已开启评论', 'success / 成功')
+        flash('Comment enabled. / 已开启评论', 'success')
     db.session.commit()
     return redirect_back()
 

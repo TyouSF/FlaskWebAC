@@ -2,14 +2,16 @@
 
 **目录/文件详解**
 
-| 文件/路径                                            | 说明                       |
-| :----------------------------------------------- | :----------------------- |
-| [test_hello.py](test_sayhello.py)                | 基于 Unittest 实现的单元测试      |
-| [.flaskenv](.flaskenv)                           | 变量配置文件，指定 FLASK_APP 等    |
-| [sayhello/\_\_init\_\_.py](sayhello/__init__.py) | 项目已包的形式组装，核心 app，db 等写于此 |
-| [sayhello/commands.py](sayhello/commands.py)     | 总定义的初始化命令                |
-| [sayhello/errors.py](sayhello/errors.py)         | 自定义处理错误页面                |
-| [sayhello/models.py](sayhello/models.py)         | 留言板模型数据                  |
-| [sayhello/forms.py](sayhello/forms.py)           | 渲染表单的 WTForms 类          |
-| [sayhello/views.py](sayhello/views.py)           | 主视图                      |
-| [sayhello/settings.py](sayhello/settings.py)     | 配置参数：如数据库连接地址等           |
+| 文件/路径                                                      | 说明                    |
+| :--------------------------------------------------------- | :-------------------- |
+| [\_\_init\_\_.py](bluelog/__init__.py)                     | 主程序（主要包含工厂主函数等）       |
+| [emails.py](bluelog/emails.py)                             | 电子邮件处理模块              |
+| [extensions.py](bluelog/extensions.py)                     | 扩展模块（如db、moment等实例化类） |
+| [fakes.py](bluelog/fakes.py)                               | 虚拟数据                  |
+| [forms.py](bluelog/forms.py)                               | 表单类                   |
+| [settings.py](bluelog/settings.py)                         | 配置文件                  |
+| [models.py](bluelog/models.py)                             | 数据模型                  |
+| [utils.py](bluelog/utils.py)                               | 辅助函数（如安全地址跳转校验等）     |
+| [bluelog/blueprints/admin.py](bluelog/blueprints/admin.py) | 后台 admin 蓝图模块         |
+| [bluelog/blueprints/auth.py](bluelog/blueprints/auth.py)   | 后台登录认证蓝图模块            |
+| [bluelog/blueprints/blog.py](bluelog/blueprints/blog.py)   | 前台 blog 蓝图模块          |
